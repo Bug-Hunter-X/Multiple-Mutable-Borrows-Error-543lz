@@ -1,0 +1,3 @@
+# Multiple Mutable Borrows in Rust
+This example demonstrates a common error in Rust: attempting to create multiple mutable borrows of the same variable.  Rust's borrow checker is designed to prevent data races, and this is a key aspect of that design.
+The `bug.rs` file contains the erroneous code.  The `bugSolution.rs` file shows how to fix the problem using techniques like cloning or using a single mutable reference.
